@@ -1,0 +1,79 @@
+:root{
+	--first-color:  #11747A;
+	--color-f1: #249CA4;
+	--color-f2: #69C8CE;
+	--color-f3: #9ED4D8;
+	--color-f4: #C8F1F3;
+	--second-color: #6D9A0E;
+	--solor-s1: #96BA49;
+	--solor-s2: #AFC382;
+	--solor-s3: #D7EEA5;
+	--solor-s4: #F4FBE6;
+	--tittle-color: #293031;
+	--color-t1: #485354;
+	--color-t2: #737A7A;
+	--color-t3: #A0A9AA;
+	--font-size-h2-t: 2.4rem;
+	--font-size-h2-d: 2.8rem;
+	--font-size-p1: 1.63rem;
+	--font-size-p2: 2rem;
+	--font-size-p12: 0.75rem;
+	--font-size-p10: 0.625rem;
+	--font: 'Montserrat', sans-serif;
+}
+
+
+/*components*/
+
+/*styles site*/
+
+h2{
+	color: var(--second-color);
+	text-align: center;
+}
+
+p{
+	color: var(--color-t1);
+	text-align: justify;
+}
+
+.nosotros{
+	padding: 4rem 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.nosotros-info{
+	width: 100%;
+}
+
+.nosotros-info img{
+	width: 100%;
+	object-fit: cover;
+}
+
+@media (min-width: 1024px){
+
+	body{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.nosotros-info{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	.nosotros-info .p2{
+		grid-column: span 2;
+	}
+
+	.nosotros-info .p3{
+		grid-column: span 2;
+	}
+
+}
